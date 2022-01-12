@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Største skianlegg i Norge</title>
+    <link rel="stylesheet" href="/kap2/IT-prosjekt/stilark/style.css">
+    
+    <style>
+      #container{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(8,1fr);
+
+        grid-template-areas: 
+        "l l r r r"
+        "l l r r r"
+        "l l r r r"
+        "l l r r r"
+        "l l r r r"
+        "b b b b b"
+        "b b b b b"
+        "b b b b b"
+        ;
+        margin: 10px;
+         
+      }
+
+      #container > div{
+        margin: 5px;
+      }
+
+      .right{
+        grid-area: r;
+      }
+
+      .left{
+        grid-area: l;
+      }
+
+      .bottom{
+        grid-area: b;
+
+        
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      table{
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-color: #181D31;
+        color: #D4ECDD;
+        border: #678983 solid 5px;
+      }
+
+      table, th, td{
+        padding: 10px;
+        border: 2px solid #678983;
+      }
+      
+      @media(max-width: 1170px){
+        #container{
+          display: flex;
+          flex-direction: column;
+        }
+
+        body{
+          line-height: 200%;
+        }
+        table{
+          font-size: 12px;
+        }
+      }
+
+      
+    </style>
+</head>
+<body>
+  
+  <div class="navigasjonsbar">
+    <a href="index.html">Home</a>
+    <a href="kilder.html" >Kilder</a>
+    <div class="dropdown">
+      <button class="dropbutton">Skianlegg </button>
+      <div class="Skianlegg">
+        <a href="Hemsedal.html">Hemsedal</a>
+        <a href="Hafjell.html">Hafjell</a>
+        <a href="Hovden.html">Hovden</a>
+        <a href="Trysil.html">Trysil</a>
+        <a href="Oppdal.html">Oppdal</a>
+        <a href="Geilo.html">Geilo</a>
+      </div>
+    </div> 
+  </div>
+  
+  <h1> De største skianleggene i Norge</h1>
+   
+
+    <div id="container">
+    <div class="right">
+        <img src="/kap2/IT-prosjekt/bilder/Skianlegg.jpg" alt="Bilde sm skal vise en som kjører på snowboard i et skianlegg">
+    </div>
+    <div class="left">
+      <p>Norge er et land med mye snø og fjell. Det er godt tilrettelagt for skikjøring og det finnes 194 skianlegg i Norge. I denne nettsiden kan du finne informasjon om de seks største skianleggene i Norge og hvor de holder til.</p>
+    </div>
+    <div class="bottom">
+      <table>
+        <thead>
+            <tr>
+                <th>Sted</th> 
+                <th>Antall heiser</th>
+                <th>Antall traseer</th>
+                <th>Fallhøyde i meter</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Trysil</td>
+                <td>32</td>
+                <td>69</td>
+                <td>685</td>
+            </tr>
+            <tr>
+                <td>Hemsedal</td>
+                <td>21</td>
+                <td>53</td>
+                <td>810</td>
+            </tr>
+            <tr>
+               <td>Geilo</td> 
+               <td>20</td>
+               <td>40</td>
+               <td>378</td>   
+            </tr>
+            <tr>
+                <td>Oppdal</td>
+                <td>18</td>
+                <td>39</td>
+                <td>715</td>
+            </tr>
+            <tr>
+                <td>Hafjell</td>
+                <td>18</td>
+                <td>33</td>
+                <td>864</td>
+            </tr>
+            <tr>
+                <td>Hovden</td>
+                <td>8</td>
+                <td>27</td>
+                <td>420</td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    </div>
+    <div>
+</body>
+</html>

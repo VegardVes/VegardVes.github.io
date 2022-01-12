@@ -1,0 +1,35 @@
+.Informasjon{
+    grid-area: i;
+
+    background-color: #181D31;
+    color: #D4ECDD;
+    padding: 10px;
+}
+
+.tom{
+    grid-area: t;
+}
+
+
+#heiskort{
+
+background-color: #181D31;
+color: #D4ECDD;
+padding: 10px;
+align-items: center;
+}
+
+#priser{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.kort{
+    width: 50%;
+}
+
+.tall{
+    font-size: 70px;
+    font-weight: bold;
+}

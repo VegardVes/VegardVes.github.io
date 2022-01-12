@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemsedal</title>
+    <link rel="stylesheet" href="/kap2/IT-prosjekt/stilark/stilarkskianlegg.css">
+    <link rel="stylesheet" href="/kap2/IT-prosjekt/stilark/style.css">
+    <Style>
+        body{
+            background-image: url(/kap2/IT-prosjekt/bilder/Hemsedal.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #container{
+            display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 500px;
+        align-items: center;
+        font-size: 18px;
+        
+
+        grid-template-areas: 
+        "i i t t t"
+        
+        ;
+
+        
+        }
+
+        @media(max-width: 770px){
+           #container{
+            display: flex;
+            flex-direction: column;
+         
+            justify-content: center;
+           } 
+           .tall{
+               font-size: 30px;  
+           }
+
+           #priser{
+               display: flex;
+               flex-direction: column;   
+           }
+        }
+
+        
+
+        
+    </Style>
+</head>
+<body>
+    <div class="navigasjonsbar">
+        <a href="index.html">Home</a>
+        <a href="kilder.html" >Kilder</a>
+        <div class="dropdown">
+            
+            <button class="dropbutton">Skianlegg </button>
+            <div class="Skianlegg">
+                <a href="Hemsedal.html">Hemsedal</a>
+                <a href="Hafjell.html">Hafjell</a>
+                <a href="Hovden.html">Hovden</a>
+                <a href="Trysil.html">Trysil</a>
+                <a href="Oppdal.html">Oppdal</a>
+                <a href="Geilo.html">Geilo</a>
+            </div>
+        </div> 
+    </div>
+    <h1>Hemsedal</h1>
+
+      <div id="container">
+          <div class="Informasjon">
+            <p>
+                Hemsedal skisenter ligger i viken fylke, øverst i det vi kaller Hallingdal. Skisenteret eies, i likhet med Trysil, av det svenske selskapet Skistar. Skianlegget åpnet i 1961 og er en meget populær skidestinasjon i Norge, spesielt for frikjørere. Det har vært arrangert flere verdenscuprenn i alpint i Hemsedal og et junior-VM i 1991. 
+            </p>
+            </div>
+            <div class="tom"> </div>
+
+        </div>
+        <div id="heiskort">
+      <h2>Nettpriser for heiskort</h2>
+      <div id="priser">
+          <div class="kort">
+              <h3>Sesongkort:</h3>
+              <p class="tall"> 7 495kr</p>
+            </div>
+            <div class="kort">
+                <h3>Dagskort:</h3>
+                <p class="tall"> 504kr</p>
+            </div>
+        </div>
+</body>
+</html>

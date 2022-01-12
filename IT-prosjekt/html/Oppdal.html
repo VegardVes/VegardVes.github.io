@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppdal</title>
+    <link rel="stylesheet" href="/kap2/IT-prosjekt/stilark/stilarkskianlegg.css">
+    <link rel="stylesheet" href="/kap2/IT-prosjekt/stilark/style.css">
+    <Style>
+        body{
+            background-image: url(/kap2/IT-prosjekt/bilder/Oppdal.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #container{
+            display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1,1fr);
+        height: 500px;
+        align-items: center;
+        font-size: 18px;
+        
+
+        grid-template-areas: 
+        "t t t i i"
+        ;
+
+        
+        }
+
+        @media(max-width: 770px){
+           #container{
+            display: flex;
+            flex-direction: column;
+         
+            justify-content: center;
+           } 
+
+           .tall{
+               font-size: 30px;  
+           }
+
+           #priser{
+               display: flex;
+               flex-direction: column;   
+           }
+
+        }
+
+        
+
+        
+    </Style>
+</head>
+<body>
+    <div class="navigasjonsbar">
+        <a href="index.html">Home</a>
+        <a href="kilder.html" >Kilder</a>
+        <div class="dropdown">
+            
+            <button class="dropbutton">Skianlegg </button>
+            <div class="Skianlegg">
+                <a href="Hemsedal.html">Hemsedal</a>
+                <a href="Hafjell.html">Hafjell</a>
+                <a href="Hovden.html">Hovden</a>
+                <a href="Trysil.html">Trysil</a>
+                <a href="Oppdal.html">Oppdal</a>
+                <a href="Geilo.html">Geilo</a>
+            </div>
+        </div> 
+    </div>
+    <h1>Oppdal</h1>
+    
+    <div id="container">
+        <div class="Informasjon">
+            <p>
+                Oppdal skisenter ligger sør i Trøndelag fylke og består av fire fjell som er knyttet sammen med skitraseer og heiser. Oppdal skisenter har gode frikjøringsmuligheter og skisenteret er en populær skidestinasjon for de som bor i Trondheim. Skianlegget er eid av Wenaasgruppen.
+            </p>
+            </div>
+            <div class="tom"> </div>
+      </div>
+
+    </div>
+    <div id="heiskort">
+  <h2>Nettpriser for heiskort</h2>
+  <div id="priser">
+      <div class="kort">
+          <h3>Sesongkort:</h3>
+          <p class="tall"> 6 200kr</p>
+        </div>
+        <div class="kort">
+            <h3>Dagskort:</h3>
+            <p class="tall"> 480kr</p>
+        </div>
+    </div>
+
+</body>
+</html>
