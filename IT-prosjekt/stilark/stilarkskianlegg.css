@@ -1,7 +1,7 @@
 .Informasjon{
     grid-area: i;
 
-    background-color: #181D31;
+    background-color: #181D31BB;
     color: #D4ECDD;
     padding: 10px;
 }
@@ -13,7 +13,7 @@
 
 #heiskort{
 
-background-color: #181D31;
+background-color: #181D31BB;
 color: #D4ECDD;
 padding: 10px;
 align-items: center;
